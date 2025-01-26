@@ -1,1 +1,37 @@
-/*  your css code here. If applicable */
+/* Hero Section Container */
+.hero {
+  display: flex;                  /* Use flexbox to align items */
+  justify-content: center;        /* Center content horizontally */
+  align-items: center;            /* Center content vertically */
+  height: 100vh;                  /* Full viewport height */
+  position: relative;             /* Positioning context for the button */
+  overflow: hidden;               /* Hide overflow of image */
+}
+
+/* Hero Image */
+.hero-image {
+  width: 100%;                    /* Take full width */
+  height: 100%;                   /* Take full height */
+  object-fit: cover;              /* Ensure image is clipped and covers area */
+}
+
+/* Explore Now Button */
+.explore-button {
+  position: absolute;             /* Position it on top of the image */
+  bottom: 20px;                   /* Place it near the bottom */
+  padding: 15px 30px;             /* Padding for button */
+  background-color: #ff5a5f;      /* Background color for the button */
+  color: white;                   /* White text color */
+  border-radius: 30px;            /* Rounded corners */
+  font-size: 18px;                /* Font size */
+  text-decoration: none;          /* Remove underline */
+  font-weight: bold;              /* Bold text */
+  text-align: center;             /* Center text inside the button */
+  transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+.explore-button:hover {
+  background-color: #e04e51;      /* Darker shade of the button color */
+}
+
